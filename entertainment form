@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Preferences</title>
+    <link rel="stylesheet" href="entertainmentfoarm.css">
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 154, 220, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+input[type="checkbox"],
+select {
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+</style>
+<body>
+    <div class="container">
+        <h1>Entertainment Form</h1>
+        <form id="preferences-form">
+            <div class="question">
+                <h3>What kind of games do you like?</h3>
+                <input type="checkbox" id="action" name="games" value="action">
+                <label for="action">American fooball</label><br>
+                <input type="checkbox" id="puzzle" name="games" value="puzzle">
+                <label for="puzzle">Athretism</label><br>
+                <input type="checkbox" id="strategy" name="games" value="strategy">
+                <label for="strategy">volleyball</label><br>
+                <input type="checkbox" id="strategy" name="games" value="strategy">
+                <label for="strategy">Football</label><br>
+                
+            </div>
+            <div class="question">
+                <h3>What kind of entertainment do you love?</h3>
+                <select id="entertainment" name="entertainment">
+                    <option value="movies">Movies</option>
+                    <option value="music">Music</option>
+                    <option value="books">Books</option>
+                    <option value="sports">Sports</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
